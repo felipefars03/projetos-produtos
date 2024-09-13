@@ -1,0 +1,11 @@
+<form action="/produtos/editar" method="post">
+<input type="hidden" name="id" value="{{produtos.id}}">
+
+<label for="serviço">Serviços</label>
+<input type="text" name="serviço" placeholder="Digite o serviço" value="{{produtos.serviço}}">
+<label for="preço">Preço</label>
+<input type="number" name="preço" placeholder="Digite o preço" value="{{produtos.preço}}">
+<label for="categoria">Categoria</label>
+<input type="number" name="categoria" placeholder="categoria" value="{{produtos.categoria}}">
+<input type="submit" value="editar">
+</form>

@@ -1,0 +1,134 @@
+.linha-tabela{
+    border: 1px solid black;
+}
+
+table{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.linha-tabela td {
+    text-align: center;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: inline;
+}
+
+input[type="submit"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+.tabela-categorias td {
+    font-weight: bold;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333; /* Cor do texto */
+    margin: 20px 0; /* Margem acima e abaixo */
+}
+
+/* Estilização para o link dentro do parágrafo */
+p a {
+    color: #007BFF; /* Cor azul para o link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+p a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilização para a imagem */
+.img-home {
+    display: block; /* Remove espaços abaixo da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Margem acima e abaixo */
+}
+
+/* Estilização para o link "Acessar Serviços" */
+a[href="/produtos/servicos"] {
+    display: inline-block; /* Adiciona comportamento de bloco ao link */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+a[href="/produtos/servicos"]:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}

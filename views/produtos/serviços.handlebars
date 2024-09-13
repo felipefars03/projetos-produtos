@@ -1,0 +1,114 @@
+<h1>Tabela de valores do Salão</h1>
+
+<img src="/img/img2.jpg" alt="">
+<img src="/img/img4.jpg" alt="">
+<img src="/img/img5.jpg" alt="">
+
+{{#if session.userid}}
+<a href="/produtos/cadastrar">Cadastrar mais serviços</a>
+{{/if}}
+
+<form action="/sair" method="post">
+<input type="submit" value="Voltar">
+</form>
+
+
+<table>
+    <tr><td colspan="2">Corte</td></tr>
+    {{#each corte}}
+
+    <tr class="linha-tabela tabela-categorias">
+
+        <td>{{this.serviço}}</td>
+
+        <td>{{this.preço}}</td>
+        {{#if ../session.userid}}
+        <td><a href="/produtos/editar/{{this.id}}">Editar</a></td>
+         <td><form action="/produtos/excluir" method="post">
+         <input type="hidden" name="id" value="{{this.id}}">
+         <input type="submit" value="Excluir">
+         </form></td>
+         {{/if}}
+       
+    </tr>
+       
+    {{/each}}
+  
+</table>
+
+<table>
+    <tr><td colspan="2">Escova</td></tr>
+    {{#each escova}}
+    
+    <tr class="linha-tabela tabela-categorias">
+        <td>{{this.serviço}}</td>
+        <td>{{this.preço}}</td>
+         {{#if ../session.userid}}
+        <td><a href="/produtos/editar/{{this.id}}">Editar</a></td>
+         <td><form action="/produtos/excluir" method="post">
+         <input type="hidden" name="id"  value="{{this.id}}">
+         <input type="submit" value="Excluir">
+         </form></td>
+         {{/if}}
+    
+    </tr>
+    {{/each}}
+</table>
+
+<table>
+    <tr><td colspan="3">Tratamento</td></tr>
+    {{#each tratamento}}
+    
+    <tr class="linha-tabela tabela-categorias">
+        <td>{{this.serviço}}</td>
+        <td>{{this.preço}}</td>
+         {{#if ../session.userid}}
+        <td><a href="/produtos/editar/{{this.id}}">Editar</a></td>
+         <td><form action="/produtos/excluir" method="post">
+         <input type="hidden" name="id"  value="{{this.id}}">
+         <input type="submit" value="Excluir">
+         </form></td>
+         {{/if}}
+    
+    </tr>
+    {{/each}}
+</table>
+
+<table>
+    <tr><td colspan="4">Retoque (meia cabeça)</td></tr>
+    {{#each retoqueMeiaCabeça}}
+    
+    <tr class="linha-tabela tabela-categorias">
+        <td>{{this.serviço}}</td>
+        <td>{{this.preço}}</td>
+         {{#if ../session.userid}}
+        <td><a href="/produtos/editar/{{this.id}}">Editar</a></td>
+         <td><form action="/produtos/excluir" method="post">
+         <input type="hidden" name="id"  value="{{this.id}}">
+         <input type="submit" value="Excluir">
+         </form></td>
+         {{/if}}
+    
+    </tr>
+    {{/each}}
+</table>
+
+<table>
+    <tr><td colspan="5">Retoque </td></tr>
+    {{#each retoque}}
+    
+    <tr class="linha-tabela tabela-categorias">
+        <td>{{this.serviço}}</td>
+        <td>{{this.preço}}</td>
+         {{#if ../session.userid}}
+        <td><a href="/produtos/editar/{{this.id}}">Editar</a></td>
+         <td><form action="/produtos/excluir" method="post">
+         <input type="hidden" name="id"  value="{{this.id}}">
+         <input type="submit" value="Excluir">
+         </form></td>
+         {{/if}}
+    
+    </tr>
+    {{/each}}
+</table>
+
